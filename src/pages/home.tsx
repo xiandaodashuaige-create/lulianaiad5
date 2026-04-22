@@ -21,7 +21,8 @@ import {
   Car,
   Briefcase,
   Camera,
-  Star
+  Star,
+  Mail
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -620,6 +621,10 @@ export default function Home() {
             <p className="text-primary-foreground/80 flex items-center gap-2 font-medium">
               或直接联系: <span className="text-white font-bold text-xl tracking-wider">+60 10-651 9843</span>
             </p>
+            <a href="mailto:xiandao456@gmail.com" className="text-primary-foreground/80 hover:text-white flex items-center gap-2 font-medium transition-colors">
+              <Mail className="w-4 h-4" />
+              邮箱: <span className="text-white font-semibold">xiandao456@gmail.com</span>
+            </a>
           </div>
         </div>
       </section>
@@ -663,6 +668,12 @@ export default function Home() {
                 <span className="text-sm text-slate-500">WhatsApp / 电话</span>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" onClick={trackWhatsAppClick} className="text-white hover:text-[#25D366] transition-colors font-medium">
                   +60 10-651 9843
+                </a>
+              </li>
+              <li className="flex flex-col mt-4">
+                <span className="text-sm text-slate-500">邮箱</span>
+                <a href="mailto:xiandao456@gmail.com" className="text-white hover:text-[#25D366] transition-colors font-medium break-all">
+                  xiandao456@gmail.com
                 </a>
               </li>
               <li className="flex flex-col mt-4">
