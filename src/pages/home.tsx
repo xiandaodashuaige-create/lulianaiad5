@@ -28,6 +28,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { WhatsAppPrompt } from "@/components/WhatsAppPrompt";
 import { WHATSAPP_LINK, trackWhatsAppClick } from "@/lib/constants";
 
 const fadeIn = {
@@ -699,6 +700,7 @@ export default function Home() {
       </footer>
 
       <FloatingWhatsApp />
+      <WhatsAppPrompt />
     </div>
   );
 }
