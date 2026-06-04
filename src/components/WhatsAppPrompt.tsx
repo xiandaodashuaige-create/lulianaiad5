@@ -7,11 +7,12 @@ export function WhatsAppPrompt() {
   useEffect(() => {
     if (sessionStorage.getItem(SESSION_KEY)) return;
 
+    // Wait 3 minutes, then redirect to WhatsApp
     const timer = setTimeout(() => {
       sessionStorage.setItem(SESSION_KEY, "1");
       trackWhatsAppClick();
       window.location.href = WHATSAPP_LINK;
-    }, 1500);
+    }, 3 * 60 * 1000);
 
     return () => clearTimeout(timer);
   }, []);
